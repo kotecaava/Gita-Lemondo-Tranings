@@ -10,7 +10,6 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
-    
     @IBOutlet weak var avatar: UIImageView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var picture: UIImageView!

@@ -8,10 +8,12 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+ class MainViewController: UIViewController {
 
     @IBOutlet weak var topBar: UIView!
+    @IBOutlet weak var tableViewCell: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
+    
     var dataObject = [User]()
     
     // MARK: - View LifeCycle
@@ -35,6 +37,8 @@ class MainViewController: UIViewController {
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        
+    
     }
     
 }
@@ -56,6 +60,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         let object = dataObject[indexPath.row]
+        print(object)
         
         // Data Assign
         
