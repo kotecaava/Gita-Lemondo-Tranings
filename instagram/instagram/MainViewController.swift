@@ -8,12 +8,15 @@
 
 import UIKit
 
- class MainViewController: UIViewController {
-
-    @IBOutlet weak var topBar: UIView!
-    @IBOutlet weak var tableViewCell: UICollectionView!
+class MainViewController: UIViewController {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
     
+    @IBAction func sendOnDirectTapped(_ sender: UIBarButtonItem) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "xxxauthorization") as? AuthorizationViewController
+        navigationController?.pushViewController(vc!, animated: true)
+    }
     var dataObject = [User]()
     
     // MARK: - View LifeCycle
@@ -21,6 +24,13 @@ import UIKit
         super.viewDidLoad()
         fetchInformation()
     }
+    //    func fetchInformationForStory() {
+    //        self.collectionView.delegate = self
+    //        self.collectionView.dataSource = self
+    //    }
+    
+    
+    
     
     func fetchInformation () {
         for i in 1..<10 {
@@ -37,13 +47,13 @@ import UIKit
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        
-    
-    }
-    
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
+        }
 }
 
-// MARK: - UITableViewDelegate & UITableViewDataSource
+// MARK: - UITableViewDelegate & UITableViewDataSource * Here we describe what will be send back to tableView
+
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -53,6 +63,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataObject.count
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "xxxTableViewCell", for: indexPath) as? TableViewCell else {
@@ -80,5 +91,25 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
-
+    
 }
+
+extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    ////////////////////
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return dataObject.count
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let coll = collectionView.dequeueReusableCell(withReuseIdentifier: "xxxcollection", for: indexPath) as? CollectionViewCCollectionViewCell else {
+            fatalError("Could not dequeue cell with identifier xxxTableViewCell")
+        }
+        let object = dataObject[indexPath.row]
+        print(object)
+        return coll
+    }
+} // extension end
+
+

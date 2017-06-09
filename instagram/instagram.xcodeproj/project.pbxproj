@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0EB3631EE2022C0068DBED /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0EB3621EE2022C0068DBED /* AuthorizationViewController.swift */; };
+		0D2E9ACB1EE85C2C00E72E22 /* TapClassBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2E9ACA1EE85C2C00E72E22 /* TapClassBar.swift */; };
 		0D425FD61EDDAF49004FD6AB /* Billabong.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D425FC81EDDAA43004FD6AB /* Billabong.ttf */; };
 		0D425FD81EDDB109004FD6AB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D425FD71EDDB109004FD6AB /* TableViewCell.swift */; };
 		0D425FDE1EDDB8C5004FD6AB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D425FDD1EDDB8C5004FD6AB /* MainViewController.swift */; };
@@ -15,9 +17,13 @@
 		0D9A5F161EDC815B00FF6BC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D9A5F141EDC815B00FF6BC0 /* Main.storyboard */; };
 		0D9A5F181EDC815B00FF6BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D9A5F171EDC815B00FF6BC0 /* Assets.xcassets */; };
 		0D9A5F1B1EDC815B00FF6BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D9A5F191EDC815B00FF6BC0 /* LaunchScreen.storyboard */; };
+		0DF929541EE572E300EF385C /* CollectionViewCCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF929531EE572E300EF385C /* CollectionViewCCollectionViewCell.swift */; };
+		0DF929561EE5977300EF385C /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF929551EE5977300EF385C /* SignUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D0EB3621EE2022C0068DBED /* AuthorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		0D2E9ACA1EE85C2C00E72E22 /* TapClassBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapClassBar.swift; sourceTree = "<group>"; };
 		0D425FC81EDDAA43004FD6AB /* Billabong.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Billabong.ttf; path = "../../../../Downloads/UG-Lemondo-master 4/TableViewApp/TableView/TableView/Resources/Fonts/Billabong.ttf"; sourceTree = "<group>"; };
 		0D425FD71EDDB109004FD6AB /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		0D425FDD1EDDB8C5004FD6AB /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +34,8 @@
 		0D9A5F171EDC815B00FF6BC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D9A5F1A1EDC815B00FF6BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D9A5F1C1EDC815B00FF6BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DF929531EE572E300EF385C /* CollectionViewCCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCCollectionViewCell.swift; sourceTree = "<group>"; };
+		0DF929551EE5977300EF385C /* SignUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,10 @@
 			isa = PBXGroup;
 			children = (
 				0D425FD71EDDB109004FD6AB /* TableViewCell.swift */,
+				0DF929531EE572E300EF385C /* CollectionViewCCollectionViewCell.swift */,
+				0D2E9ACA1EE85C2C00E72E22 /* TapClassBar.swift */,
+				0D0EB3621EE2022C0068DBED /* AuthorizationViewController.swift */,
+				0DF929551EE5977300EF385C /* SignUp.swift */,
 				0D425FDD1EDDB8C5004FD6AB /* MainViewController.swift */,
 			);
 			name = View;
@@ -106,8 +118,8 @@
 				0D425FDC1EDDB194004FD6AB /* Models */,
 				0D425FD91EDDB124004FD6AB /* View */,
 				0D425FC91EDDAA48004FD6AB /* Resources */,
-				0D9A5F191EDC815B00FF6BC0 /* LaunchScreen.storyboard */,
 				0D9A5F141EDC815B00FF6BC0 /* Main.storyboard */,
+				0D9A5F191EDC815B00FF6BC0 /* LaunchScreen.storyboard */,
 				0D9A5F1C1EDC815B00FF6BC0 /* Info.plist */,
 			);
 			path = instagram;
@@ -188,9 +200,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DF929561EE5977300EF385C /* SignUp.swift in Sources */,
 				0D425FE01EDDBE01004FD6AB /* User.swift in Sources */,
 				0D425FD81EDDB109004FD6AB /* TableViewCell.swift in Sources */,
 				0D9A5F111EDC815B00FF6BC0 /* AppDelegate.swift in Sources */,
+				0DF929541EE572E300EF385C /* CollectionViewCCollectionViewCell.swift in Sources */,
+				0D0EB3631EE2022C0068DBED /* AuthorizationViewController.swift in Sources */,
+				0D2E9ACB1EE85C2C00E72E22 /* TapClassBar.swift in Sources */,
 				0D425FDE1EDDB8C5004FD6AB /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
