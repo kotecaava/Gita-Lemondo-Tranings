@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
+## Welcome to My GitHub Page 
 
-You can use the [editor on GitHub](https://github.com/kotecaava/Gita-Lemondo-Tranings/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Here is My usefull links to build high level apps with usefull features.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### localization Language 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+#Great applications should have great localization. And users will appreciate an option to use beloved apps in their native language
 
-```markdown
-Syntax highlighted code block
+https://medium.com/flawless-app-stories/dry-string-localization-with-interface-builder-665496eb0270
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+### Firebase tutorial
 
-1. Numbered
-2. List
+#Use firebase to create authorisation and load infromation from db
 
-**Bold** and _Italic_ and `Code` text
+https://www.raywenderlich.com/139322/firebase-tutorial-getting-started-2
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### IOS Developer usefull links
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kotecaava/Gita-Lemondo-Tranings/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+https://developer.apple.com/documentation/
