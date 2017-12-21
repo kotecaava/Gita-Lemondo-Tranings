@@ -14,7 +14,6 @@ class SignUp: UIViewController {
     @IBOutlet weak var userNameTxT: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     var username = ""
     var password = ""

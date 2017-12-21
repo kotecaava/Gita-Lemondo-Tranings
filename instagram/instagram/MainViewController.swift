@@ -7,34 +7,32 @@
 //
 
 import UIKit
+import firebase
+
 
 class MainViewController: UIViewController {
     
+    
+    let rootref = fir
+
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
     
-    @IBAction func sendOnDirectTapped(_ sender: UIBarButtonItem) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "xxxauthorization") as? AuthorizationViewController
-        navigationController?.pushViewController(vc!, animated: true)
-    }
     var dataObject = [User]()
     
     // MARK: - View LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
+
+
         fetchInformation()
     }
-    //    func fetchInformationForStory() {
-    //        self.collectionView.delegate = self
-    //        self.collectionView.dataSource = self
-    //    }
-    
-    
-    
-    
+
     func fetchInformation () {
         for i in 1..<10 {
-            let object = User()
+            var object = User()
             object.avatar = UIImage(named: "avatar_\(i)")
             object.picture = UIImage(named: "picture_\(i)")
             
@@ -47,13 +45,11 @@ class MainViewController: UIViewController {
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.collectionView.delegate = self
-        self.collectionView.dataSource = self
+
         }
 }
 
-// MARK: - UITableViewDelegate & UITableViewDataSource * Here we describe what will be send back to tableView
-
+    // MARK: - UITableViewDelegate & UITableViewDataSource * Here we describe what will be send back to tableView
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -94,22 +90,45 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
 }
 
-extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    
-    ////////////////////
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataObject.count
-        
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let coll = collectionView.dequeueReusableCell(withReuseIdentifier: "xxxcollection", for: indexPath) as? CollectionViewCCollectionViewCell else {
-            fatalError("Could not dequeue cell with identifier xxxTableViewCell")
-        }
-        let object = dataObject[indexPath.row]
-        print(object)
-        return coll
-    }
-} // extension end
+//    extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource  {
+//    
+//    ////////////////////
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return dataObject.count
+//        
+//    }
+//    
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        guard let coll = collectionView.dequeueReusableCell(withReuseIdentifier: "xxximagestory", for: indexPath) as? ImageStory else {
+//            fatalError("Could not dequeue cell with identifier xxxTableViewCell")
+//        }
+//        let object = dataObject[indexPath.row]
+//        print(object)
+//        
+//        return coll
+    // end of guard
+// extension end
 
+
+// MARK: - UICollectionViewDelegate & UICollectionViewDataSource
+//extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return self.dataObject.count
+//    }
+//    
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: xxxNewsFeedCollCell, for: indexPath) as? NewsCollCell else {
+//            fatalError("Could not dequeue cell with identifier xxxNewsFeedCollCell")
+//        }
+//        
+//        let object = self.dataObject[indexPath.item]
+//        
+//        // assign avatar
+//        let url = URL(string: object.picture) // cast string to url
+//        cell.avatar.sd_setImage(with: url)
+//        cell.userName.text = object.userName
+//        
+//        return cell
+//    }
+//}
 

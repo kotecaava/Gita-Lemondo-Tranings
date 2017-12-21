@@ -1,0 +1,5 @@
+target 'instagram' do
+pod 'Firebase/Firestore'
+
+
+end

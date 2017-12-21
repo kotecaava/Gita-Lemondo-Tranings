@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>140174528513-dq2odmhs42rn0gbvp8musgifhdniq1eo.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.140174528513-dq2odmhs42rn0gbvp8musgifhdniq1eo</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD_myXljURbUHdN3h7b4zl9Ev0Dsb3dQq0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>140174528513</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>konstantine-tsaava.instagram</string>
+	<key>PROJECT_ID</key>
+	<string>citycare-796e6</string>
+	<key>STORAGE_BUCKET</key>
+	<string>citycare-796e6.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:140174528513:ios:216558370668f3fa</string>
+	<key>DATABASE_URL</key>
+	<string>https://citycare-796e6.firebaseio.com</string>
+</dict>
+</plist>
