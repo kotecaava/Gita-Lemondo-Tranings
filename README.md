@@ -70,6 +70,11 @@ https://www.raywenderlich.com/139322/firebase-tutorial-getting-started-2
 
 https://www.raywenderlich.com/143128/background-modes-tutorial-getting-started
 
-### IOS Developer usefull links
+### Apple Developer documentation
 
 https://developer.apple.com/documentation/
+
+
+### Testing IOS
+
+https://www.raywenderlich.com/181326/updated-course-testing-in-ios?utm_source=raywenderlich.com+Weekly&utm_campaign=17b1c2f872-raywenderlich_com_Weekly_Issue_148&utm_medium=email&utm_term=0_83b6edc87f-17b1c2f872-416089821
