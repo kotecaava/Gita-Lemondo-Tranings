@@ -56,6 +56,10 @@ https://www.raywenderlich.com/156966/push-notifications-tutorial-getting-started
 ray wenderlich
 https://www.raywenderlich.com/180356/ios-internationalization?utm_source=raywenderlich.com+Weekly&utm_campaign=17b1c2f872-raywenderlich_com_Weekly_Issue_148&utm_medium=email&utm_term=0_83b6edc87f-17b1c2f872-416089821
 
+Medium com
+
+https://medium.com/flawless-app-stories/dry-string-localization-with-interface-builder-665496eb0270
+
 ### Core Data
 
 https://www.raywenderlich.com/173972/getting-started-with-core-data-tutorial-2
