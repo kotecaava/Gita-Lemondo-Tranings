@@ -74,6 +74,19 @@ https://www.raywenderlich.com/139322/firebase-tutorial-getting-started-2
 
 https://www.raywenderlich.com/143128/background-modes-tutorial-getting-started
 
+
+### Designing a better notification experience for iOS
+
+https://uxdesign.cc/designing-a-better-notification-experience-for-ios-def1df8e89e8
+
+### Swift Tutorial: Proper way to request review
+
+https://medium.com/@behrad.bagheri/swift-tutorial-proper-way-to-request-review-using-skstorereviewcontroller-in-ios-10-3-and-higher-eaf724e5be83
+
+
+### Become IOS Developer
+
+https://badootech.badoo.com/how-to-become-an-ios-developer-91aaa4719a91
 ### Apple Developer documentation
 
 https://developer.apple.com/documentation/
